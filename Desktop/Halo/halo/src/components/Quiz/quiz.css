@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .time-left {
+    margin-bottom: 1rem;
+    font-family: Poppins;
+  }
+  
+  .centered-container {
+    text-align: center;
+    font-family: Poppins;
+  }
+  
+  .question-number {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: Poppins;
+  }
+  
+  .question {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Poppins;
+    font-size: xx-large;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .option-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    flex-basis: 45%; /* set the width of each button */
+    font-family: Poppins;
+  }
+  
+  @media (max-width: 768px) {
+    .option-button {
+      flex-basis: 90%; /* set the width of each button for small screens */
+    }
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Poppins;
+  }
+  
+  .option:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .option.selected {
+    background-color: black;
+    color: white;
+  }
+  
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow:hover {
+    transform: translateY(0.5rem);
+  }
+  
